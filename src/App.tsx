@@ -6,6 +6,7 @@ import Button from './button.png'
 import './App.scss';
 
 
+
 class App extends React.Component<any, any> {
 
   constructor(props: any) {
