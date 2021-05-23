@@ -83,11 +83,11 @@ class App extends React.Component<any, any> {
           <div className='hold-wrap'>
             <div className='hold'>
               <img src={Dan} alt='Dan' className={onHole === 1 ? 'display' : ''} />
-              <img src={Bua} className={currentPress === 'a' || currentPress === 'A' ? 'display-bua' : ''} />
+              <img src={Bua} className={currentPress === 'a' || currentPress === 'A' ? 'display-bua' : ''} alt='hole' />
               <img src={Hole} alt='hole' />
             </div>
             <div className='guide'>
-              <img src={Button} className={currentPress === 'a' || currentPress === 'A' ? 'scale-button' : ''} />
+              <img src={Button} className={currentPress === 'a' || currentPress === 'A' ? 'scale-button' : ''} alt='hole' />
               <span>PRESS A</span>
             </div>
           </div>
@@ -96,11 +96,11 @@ class App extends React.Component<any, any> {
           <div className='hold-wrap'>
             <div className='hold'>
               <img src={Dan} alt='Dan' className={onHole === 2 ? 'display' : ''} />
-              <img src={Bua} className={currentPress === 'b' || currentPress === 'B' ? 'display-bua' : ''} />
+              <img src={Bua} className={currentPress === 'b' || currentPress === 'B' ? 'display-bua' : ''} alt='hole' />
               <img src={Hole} alt='hole' />
             </div>
             <div className='guide'>
-              <img src={Button} className={currentPress === 'b' || currentPress === 'B' ? 'scale-button' : ''} />
+              <img src={Button} className={currentPress === 'b' || currentPress === 'B' ? 'scale-button' : ''} alt='hole' />
               <span>PRESS B</span>
             </div>
           </div>
@@ -109,11 +109,11 @@ class App extends React.Component<any, any> {
           <div className='hold-wrap'>
             <div className='hold'>
               <img src={Dan} alt='Dan' className={onHole === 3 ? 'display' : ''} />
-              <img src={Bua} className={currentPress === 'c' || currentPress === 'C' ? 'display-bua' : ''} />
+              <img src={Bua} className={currentPress === 'c' || currentPress === 'C' ? 'display-bua' : ''} alt='hole' />
               <img src={Hole} alt='hole' />
             </div>
             <div className='guide'>
-              <img src={Button} className={currentPress === 'c' || currentPress === 'C' ? 'scale-button' : ''} />
+              <img src={Button} className={currentPress === 'c' || currentPress === 'C' ? 'scale-button' : ''} alt='hole' />
               <span>PRESS C</span>
             </div>
           </div>
