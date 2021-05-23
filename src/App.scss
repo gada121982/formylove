@@ -1,0 +1,114 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./background.jpg');
+  background-size: cover;
+
+  .sandap {
+    z-index: 2;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .hold {
+      display: flex;
+      flex-direction: column;
+      height: 300px;
+      width: 400px;
+      //background-color: rgb(171, 162, 162);
+      position: relative;
+      justify-content: center;
+      align-items: center;
+
+      img:nth-child(1) {
+        transform: scale(0.9);
+        position: absolute;
+        z-index: 2;
+        display: none;
+        animation: dananimation 0.3s;
+      }
+
+      @keyframes dananimation {
+        from {
+          top: 0;
+        }
+
+        to {
+          top: -150;
+        }
+      }
+
+      img:nth-child(2) {
+        position: absolute;
+        transform: scale(0.5);
+        z-index: 5;
+        display: none;
+      }
+
+      img:nth-child(3) {
+
+        transform: scale(0.4);
+      }
+    }
+  }
+}
+
+.guide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img:nth-child(1) {
+    transform: scale(0.7);
+
+  }
+
+  span {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.score {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+    color: white;
+    font-weight: 800;
+    font-size: 5rem;
+  }
+
+  span:nth-child(2) {
+    animation: score 0.1as;
+  }
+
+  @keyframes score {
+    from {
+      font-size: 5rem;
+    }
+
+    to {
+      font-size: 6rem;
+    }
+  }
+
+}
+
+.display {
+  display: flex !important;
+}
+
+.scale-button {
+  transform: scale(1.15) !important;
+}
+
+.display-bua {
+  display: flex !important;
+}
