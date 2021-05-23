@@ -5,10 +5,6 @@ import Hole from './hole.png'
 import Button from './button.png'
 import './App.scss';
 
-type LoveType = {
-  onHole: number,
-  score: number
-}
 
 class App extends React.Component<any, any> {
 
