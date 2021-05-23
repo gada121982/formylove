@@ -6,6 +6,8 @@ import Button from './button.png'
 import './App.scss';
 
 
+let audio = new Audio('https://res.cloudinary.com/vinhhai/video/upload/v1621764844/gxrvvc4lsv9ii5pmjvsu.mp3')
+
 
 class App extends React.Component<any, any> {
 
@@ -15,7 +17,8 @@ class App extends React.Component<any, any> {
     this.state = {
       onHole: 2,
       score: 0,
-      currentPress: ''
+      currentPress: '',
+      play: false
     }
   }
 
@@ -38,6 +41,7 @@ class App extends React.Component<any, any> {
     })
     console.log('check', this.checkScored(key))
     if (this.checkScored(key)) {
+      audio.play()
       this.setState({
         score: this.state.score + 100,
       })
@@ -72,6 +76,7 @@ class App extends React.Component<any, any> {
   render() {
     let { score, onHole, currentPress } = this.state
     return (
+
       <div className="App">
         <header className="header">
         </header>
